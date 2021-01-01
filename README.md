@@ -11,6 +11,17 @@ Methods used:
  checkChainValidity()
  proofOfWork()
 ```
+
+# Run the blockchain in your terminal: 
+
+To run, make sure you have installed - npm install --save crypto-js - 
+and run the command node index.js in terminal. 
+
+You will first get a message telling you Cowellereum is mining. 
+
+Then an array of objects, displaying the blockchain. 
+
+
 # Step 1: Creating the Block
 
 require in  crypto-js/sha256 module. this will allow me to calculate the hash of each block. 
@@ -57,15 +68,6 @@ In my cryptoBlock class, i have added a proofOfWork method. Depending on the dif
 
 
 
-
-# To run the blockchain: 
-
-To run, make sure you have installed - npm install --save crypto-js - 
-and run the command node index.js in terminal. 
-
-You will first get a message telling you Cowellereum is mining. 
-
-Then an array of objects, displaying the blockchain. 
 
 
 
