@@ -1,16 +1,17 @@
 # cowellereum-coin
 
-Install: npm install --save crypto-js
+ Run in your CLI:   ``` npm install --save crypto-js ```
 
 Methods used: 
-computeHash()
-startGenesisBlock()
-obtainLatestBlock()
-addNewBlock()
-checkChainValidity()
-proofOfWork()
-
-Step 1: Creating the Block
+```
+ computeHash()
+ startGenesisBlock()
+ obtainLatestBlock()
+ addNewBlock()
+ checkChainValidity()
+ proofOfWork()
+```
+# Step 1: Creating the Block
 
 require in  crypto-js/sha256 module. this will allow me to calculate the hash of each block. 
 
@@ -20,7 +21,9 @@ require in  crypto-js/sha256 module. this will allow me to calculate the hash of
 * Data - this will include details of completed transactions such as sender/reciever details and amount sent/recived. 
 * Preceding hash - it will connect to the preceding block in the chain. This is vital for a blockchain
 
-Step 2: Create the Blockchain
+
+
+# Step 2: Create the Blockchain
 
 I created a blockchain propery, then passed it into startGenesisBlock(). This creates Block 0.
 
@@ -38,23 +41,31 @@ line 59 there is a commented out console log to see it work in the terminal.
 it shows each block referencing the previous block hash. 
 
 
-Checking Validity 
+
+
+# Step 3: Checking Validity
+
 A key feature of blockchain is that it cannot be changed without invalidating the rest of the chain. 
 
 To check the integrity is intact, we can use the checkChainValidity() method. 
 
-Proof of work
+
+
+# Step 4: Proof of work
 
 In my cryptoBlock class, i have added a proofOfWork method. Depending on the difficulty level, this will stop miners from making new blocks so easily. 
 
 
+
+
+# To run the blockchain: 
 
 To run, make sure you have installed - npm install --save crypto-js - 
 and run the command node index.js in terminal. 
 
 You will first get a message telling you Cowellereum is mining. 
 
-then an array of objects, displaying the blockchain. 
+Then an array of objects, displaying the blockchain. 
 
 
 
