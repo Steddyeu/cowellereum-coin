@@ -7,6 +7,8 @@ computeHash()
 startGenesisBlock()
 obtainLatestBlock()
 addNewBlock()
+checkChainValidity()
+proofOfWork()
 
 Step 1: Creating the Block
 
@@ -34,6 +36,27 @@ To test if it works i ran an instance of CryptoBlockchain, and added in data.
 line 59 there is a commented out console log to see it work in the terminal. 
 
 it shows each block referencing the previous block hash. 
+
+
+Checking Validity 
+A key feature of blockchain is that it cannot be changed without invalidating the rest of the chain. 
+
+To check the integrity is intact, we can use the checkChainValidity() method. 
+
+Proof of work
+
+In my cryptoBlock class, i have added a proofOfWork method. Depending on the difficulty level, this will stop miners from making new blocks so easily. 
+
+
+
+To run, make sure you have installed - npm install --save crypto-js - 
+and run the command node index.js in terminal. 
+
+You will first get a message telling you Cowellereum is mining. 
+
+then an array of objects, displaying the blockchain. 
+
+
 
 
 
