@@ -1,5 +1,7 @@
 # cowellereum-coin
 
+Wanting to deepen my understanding of blockchain, I decided to make my own in node.js, using methods from the crypto-js library. I created a block, a block chain, checked validity and proof of work. Follow the README for more info and instructions on how to run.
+
  Run in your CLI:   ``` npm install --save crypto-js ```
 
 Methods used: 
